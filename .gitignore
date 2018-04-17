@@ -1,3 +1,4 @@
 .idea/
 student-java-begin.iml
 out/
+*.class
