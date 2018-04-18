@@ -1,6 +1,7 @@
 package com.acioli.claudio.ch2;
 
 public class LogicalOpTable{
+
     public static void main(String[] args){
         head();
         row(true, true);
