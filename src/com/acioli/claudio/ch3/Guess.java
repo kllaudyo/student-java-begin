@@ -5,26 +5,28 @@ public class Guess{
 
     public static void main(String[] args)
             throws java.io.IOException{
-        char ch, answer = 'K';
+        char ch, ignore, answer = 'K';
 
-        System.out.println("I'm thinking of a letter between A and Z.");
-        System.out.print("Can you guess it? ");
+        do {
 
-        ch = (char) System.in.read();
+            System.out.println("I'm thinking of a letter between A and Z.");
+            System.out.print("Can you guess it? ");
+            ch = (char) System.in.read();
 
-        if(ch == answer)
+            do ignore = (char) System.in.read(); while(ignore != '\n');
 
-            System.out.println("** Right **");
+            if(ch==answer)
+                System.out.println("** Right **");
+            else{
+                System.out.println("Game Over ;-)");
+                if(ch < answer)
+                    System.out.println("too low...");
+                else
+                    System.out.println("too high...");
+            }
 
-        else {
+        }while(ch != answer);
 
-            if(ch < answer)
-                System.out.println("too low...");
-            else
-                System.out.println("too hight...");
-
-            System.out.println("Sorry, try again...");
-        }
     }
 
 }
