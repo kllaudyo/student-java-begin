@@ -13,6 +13,8 @@ public class Guess{
             System.out.print("Can you guess it? ");
             ch = (char) System.in.read();
 
+            //para que use apenas o primeiro caracter
+            //o buffer sempre adiciona apos o enter a \n que é o ultimo char
             do ignore = (char) System.in.read(); while(ignore != '\n');
 
             if(ch==answer)
