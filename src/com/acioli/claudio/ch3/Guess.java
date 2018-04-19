@@ -11,10 +11,20 @@ public class Guess{
         System.out.print("Can you guess it? ");
 
         ch = (char) System.in.read();
+
         if(ch == answer)
+
             System.out.println("** Right **");
-        else
+
+        else {
+
+            if(ch < answer)
+                System.out.println("too low...");
+            else
+                System.out.println("too hight...");
+
             System.out.println("Sorry, try again...");
+        }
     }
 
 }
