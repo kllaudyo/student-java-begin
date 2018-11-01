@@ -33,7 +33,7 @@ public class Rocha{
 			//Lê a resposta do usuário via linha de comando
 			resposta = Integer.parseInt(System.console().readLine());
 
-			//ATENÇÃO aqui esta o pulo do gado do exercício, a variavel de classe tentativas
+			//ATENÇÃO aqui esta o pulo do gato do exercício, a variavel de classe tentativas
 			//só pode ser atribuída desta forma por conta de ser uma variável estatíca
 			//aqui poderia ser armazenado em uma variavel local, porém a orientação a objeto não seria utilizada
 			//IMPORTANTÍSSIMO entender o conceito de "variáveis de classe"
